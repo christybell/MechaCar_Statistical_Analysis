@@ -1,6 +1,6 @@
 # Statistics and R
 
-<img src="images/statistics-header.png" width="1000" height="300">
+<img src="images/statistics-header.jpg" width="1000" height="300">
 
 ## Project Overview
 For this project, I applied my understanding of statistics and hypothesis testing to analyze a series of datasets from the automotive industry. All of the analysis and visualizations were written in the R programming language.
@@ -21,7 +21,9 @@ I designed a linear model that predicts the mpg of MechaCar prototypes using sev
 
 ### **3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
 
-<img src="images/Delv 1.PNG">
+<img src="images/Delv 1_linear regression.PNG">
+
+<img src="images/Delv 1_summary stats.PNG">
 
 ### Deliverable 2: Summary Statistics on Suspension Coils
 
