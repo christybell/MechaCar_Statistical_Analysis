@@ -6,10 +6,10 @@ library(dplyr)
 MechaCar_mpg<- read.csv('MechaCar_mpg.csv') 
 
 #Delv 1: Step 5.Generate multiple linear regression model.
-lm(vehicle_length ~ vehicle_weight + spoiler_angle + ground_clearance + AWD + mpg,data=MechaCar_mpg) 
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar_mpg) 
 
 #Delv 1: Step 6. Generate summary statistics of LR.
-summary(lm(vehicle_length ~ vehicle_weight + spoiler_angle + ground_clearance + AWD + mpg,data=MechaCar_mpg))
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar_mpg))
 
 #Deliverable 2: Step 2. Import and read in the Suspension_Coil dataset.
 suspension_coil <- read.csv('Suspension_Coil.csv')
