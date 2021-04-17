@@ -1,19 +1,33 @@
+
+#Deliverable 1: Step 3. Load `dplyr` package.
 library(dplyr)
 
-#import and read in the MechaCar_mpg dataset
+#Delv 1: Step 4. Import and read in the MechaCar_mpg dataset.
 MechaCar_mpg<- read.csv('MechaCar_mpg.csv') 
 
-#generate multiple linear regression model
+#Delv 1: Step 5.Generate multiple linear regression model.
 lm(vehicle_length ~ vehicle_weight + spoiler_angle + ground_clearance + AWD + mpg,data=MechaCar_mpg) 
 
-#generate summary statistics
+#Delv 1: Step 6. Generate summary statistics of LR.
 summary(lm(vehicle_length ~ vehicle_weight + spoiler_angle + ground_clearance + AWD + mpg,data=MechaCar_mpg))
 
-#import and read in the Suspension_Coil dataset
+#Deliverable 2: Step 2. Import and read in the Suspension_Coil dataset.
 suspension_coil <- read.csv('Suspension_Coil.csv')
 
-#generate dataframe of summary statistics for PSI column
+#Delv 2: Step 3. Generate data frame of summary statistics for PSI column.
 total_summary <- suspension_coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
 
-#generate dataframe to group manufacturing lot by stats of PSI column
+#Delv 2: Step 4. Generate data frame to group manufacturing lot by stats of PSI column.
 lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
+
+#Deliverable 3: Step 1. Perform t-test to determine if PSI across all lots is statistically different from pop. mean of 1500 PSI.
+t.test(suspension_coil$PSI, mu=1500)
+
+#Delv 3: Step 2. Perform t-test for PSI in Lot 1.
+t.test(subset(suspension_coil, Manufacturing_Lot == "Lot1")$PSI, mu=1500)
+
+#Delv 3: Step 2. Perform t-test for PSI in Lot 2.
+t.test(subset(suspension_coil, Manufacturing_Lot == "Lot2")$PSI, mu=1500)
+
+#Delv 3: Step 2. Perform t-test for PSI in Lot 3.
+t.test(subset(suspension_coil, Manufacturing_Lot == "Lot3")$PSI, mu=1500)
