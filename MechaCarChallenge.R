@@ -14,10 +14,10 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 #Deliverable 2: Step 2. Import and read in the Suspension_Coil dataset.
 suspension_coil <- read.csv('Suspension_Coil.csv')
 
-#Delv 2: Step 3. Generate data frame of summary statistics for PSI column.
+#Delv 2: Step 3. Generate dataframe of summary statistics for PSI column.
 total_summary <- suspension_coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
 
-#Delv 2: Step 4. Generate data frame to group manufacturing lot by stats of PSI column.
+#Delv 2: Step 4. Generate dataframe to group manufacturing lot by stats of PSI column.
 lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
 
 #Deliverable 3: Step 1. Perform t-test to determine if PSI across all lots is statistically different from pop. mean of 1500 PSI.
