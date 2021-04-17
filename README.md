@@ -16,10 +16,13 @@ For this project, I applied my understanding of statistics and hypothesis testin
 I designed a linear model that predicts the mpg of MechaCar prototypes using several variables from the `MechaCar_mpg.csv` dataset. The multiple linear regression results help to answer the following 3 questions:
 
 ### **1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
+Using the regression analysis, where low p-values indicate a non-random amount of variance to the mpg values (see calculations circled in red in screenshot below), the variables with a high correlation to mpg are vehicle length and ground clearance.
 
 ### **2. Is the slope of the linear model considered to be zero? Why or why not?**
+The calculated p-value of the multiple regression is 5.35e-11 (see calculation circled in purple in screenshot below), which is much smaller than an assumed significance level of 0.05%. Therefore, there is sufficient evidence to reject the null hypothesis, which means the slope of the model is not zero. 
 
 ### **3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
+This linear regression model can predict the mpg of MechaCar prototypes effectively since the R-squared value is 0.7149 (see calculation circled in yellow in screenshot below), meaning that predictions will be correct 71% of the time.
 
 <img src="images/Delv 1_linear regression.PNG">
 
