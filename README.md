@@ -23,8 +23,6 @@ I designed a linear model that predicts the mpg of MechaCar prototypes using sev
 
 <img src="images/Delv 1_linear regression.PNG">
 
-<img src="images/Delv 1_summary stats.PNG">
-
 ### Deliverable 2: Summary Statistics on Suspension Coils
 
 I created a summary statistic table with the `Suspension_Coils.csv` dataset to answer the following question:
