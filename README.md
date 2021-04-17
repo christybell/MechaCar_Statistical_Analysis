@@ -39,9 +39,9 @@ I created a summary statistic table with the `Suspension_Coils.csv` dataset to a
 
 I performed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pound per square inch. In summary, the t-test results show that:
 
-<img src="images/Delv 3.PNG">
+<img src="images/Delv 3_t-test_all lots.PNG">
 
-<img src="images/Delv 3.PNG">
+<img src="images/Delv 3_t-test_lots.PNG">
 
 ### Deliverable 4: Study Design - MechaCar vs. Competition
 
@@ -54,5 +54,3 @@ What metric or metrics are you going to test?
 What is the null hypothesis or alternative hypothesis?
 What statistical test would you use to test the hypothesis? And why?
 What data is needed to run the statistical test?
-
-<img src="images/Delv 4.PNG">
