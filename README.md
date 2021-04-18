@@ -28,7 +28,7 @@ This linear regression model can predict the mpg values of MechaCar prototypes f
 
 ### Deliverable 2: Summary Statistics on Suspension Coils
 
-I created a summary statistic table with the `Suspension_Coils.csv` dataset to answer the following question:
+I created two summary statistic tables with the `Suspension_Coils.csv` dataset to answer the following question:
 
 ### **1. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?**
 The `total_summary` table shows the variance for all manufacturing lots is 62.29 and well under 100 pounds per square inch, thus meeting the design specifications for the MechaCar suspension coils.
